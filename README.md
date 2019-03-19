@@ -1,11 +1,12 @@
 # chen-models
-TensorFlow code for distributed training process of ResNet, AlexNet, VGG, Inception under different synchronization schemes (BSP, ASP, SSP, RRSP)
-
-For detail introduction of RRSP, please refer to the INFOCOM'19 paper "Round-Robin Synchronization: Mitigating Communication Bottlenecks in Parameter Servers".
 
 1. What's this repository?
 
-  It contains some unofficial codes for distributed training process of ResNet, AlexNet, VGG and Inception.
+  This repository includes the TensorFlow code for distributed training of ResNet, AlexNet, VGG, Inception under different synchronization schemes (BSP, ASP, SSP, RRSP)
+
+  The Round-Robin Synchronization mechanism is mainly described in the file "batchsizemanager.py".
+
+  For detailed introduction of RRSP, please refer to the INFOCOM'19 paper "Round-Robin Synchronization: Mitigating Communication Bottlenecks in Parameter Servers".
   
 2. How to run the codes?
 
@@ -35,4 +36,3 @@ For detail introduction of RRSP, please refer to the INFOCOM'19 paper "Round-Rob
     
     "bash sync.sh <file_name>" to synchronize the <file_name> to all workers.
 
-*The core code for describing the Round-Robin Synchronization mechanism is in the file 'batchsizemanager.py'.
